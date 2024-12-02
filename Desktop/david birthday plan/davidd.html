@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Date Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>David's Birthday Date!</h1>
+    <form id="datePlanner">
+
+      <div class="section">
+        <label for="drink">Pick a drink:</label>
+        <select id="drink" name="drink">
+          <option value="Coffee">Coffee</option>
+          <option value="Turkish Coffee">Turkish Coffee</option>
+          <option value="Vietnamese Coffee">Vietnamese Coffee</option>
+          <option value="Matcha">Matcha</option>
+          <option value="Tea">Tea</option>
+          <option value="Boba">Boba</option>
+        </select>
+      </div>
+
+      <div class="section">
+        <label for="shortActivity">Pick a short activity:</label>
+        <select id="shortActivity" name="shortActivity">
+          <option value="Claw Machine Room">Claw Machine Room</option>
+          <option value="Hmart">Hmart</option>
+          <option value="Ice Skating">Ice Skating</option>
+          <option value="Meow Wolf">Meow Wolf</option>
+          <option value="Dog Park">Dog Park</option>
+          <option value="Mall">Mall</option>
+        </select>
+      </div>
+
+      <div class="section">
+        <label for="activity">Pick a main activity:</label>
+        <select id="activity" name="activity">
+          <option value="Hot Springs">Hot Springs</option>
+          <option value="Zoo">Zoo</option>
+          <option value="Drive-In Movie">Drive-In Movie</option>
+          <option value="Make Our Own Rug">Make Our Own Rug</option>
+          <option value="Ceramic Making">Ceramic Making</option>
+          <option value="Whatever Pookie Wants">Bonus: Whatever Pookie Wants</option>
+        </select>
+      </div>
+
+      <div class="section">
+        <label for="dinner">Pick a dinner option:</label>
+        <select id="dinner" name="dinner">
+          <option value="Mexican">Mexican</option>
+          <option value="Sushi">Sushi</option>
+          <option value="American">American</option>
+          <option value="Korean">Korean</option>
+          <option value="Seafood">Seafood</option>
+          <option value="Middle Eastern">Middle Eastern</option>
+          <option value="Italian">Italian</option>
+        </select>
+      </div>
+      
+      <button type="button" id="submitBtn">Plan the Date!</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

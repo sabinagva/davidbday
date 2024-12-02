@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Planned Date</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Birthday Plan of Mi Amor</h1>
+    <div id="summary">
+      <!-- Date summary will appear here -->
+    </div>
+    <button id="specialNoteBtn">Special Note ❤️</button>
+  </div>
+
+  <script>
+    // Retrieve the data from the URL
+    const params = new URLSearchParams(window.location.search);
+    const drink = params.get('drink');
+    const shortActivity = params.get('shortActivity');
+    const activity = params.get('activity');
+    const dinner = params.get('dinner');
+
+    // Display the summary
+    document.getElementById('summary').innerHTML = `
+      <p>Here’s what our day will look like:</p>
+      <ul>
+        <p>We will wake up and get some ${drink}</p>
+        <p>Then I will take my sweet bean to have some fun at ${shortActivity}</p>
+        <p>Then we will come back home, relax and take 5, and play with doggies. Then we will cut some cake and open gifts 🤭</p>
+        <p>Then we will go on our main date and go to ${activity}</p>
+        <p>After a long day, hopefully, pookie is hungry so we can go get some yummy ${dinner} food</p>
+      </ul>
+      <p>Love you Baby ❤️🎉❤️</p>
+    `;
+    
+
+    // Add an event listener to the button
+    document.getElementById('specialNoteBtn').addEventListener('click', function () {
+      window.location.href = "special-note.html"; // Redirect to the special note page
+    });
+  </script>
+</body>
+</html>
+

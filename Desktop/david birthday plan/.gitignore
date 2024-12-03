@@ -1,0 +1,10 @@
+# Ignore system files
+.DS_Store
+.Trash/
+.localized
+
+# Ignore user-specific files
+../../*
+
+# Ignore directories outside the project scope
+../*
